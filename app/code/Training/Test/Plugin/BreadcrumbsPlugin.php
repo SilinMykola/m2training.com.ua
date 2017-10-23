@@ -8,7 +8,8 @@ class BreadcrumbsPlugin
 {
 	public function beforeAddCrumb (\Magento\Theme\Block\Html\Breadcrumbs $subject, $crumbName, $crumbInfo)
 	{
-		$crumbName = $crumbName.'(!)';
+//		$crumbInfo['label'] = $crumbInfo['label']->__toString().'(!)';
+		$crumbName .= '(!)';
 		return [$crumbName, $crumbInfo];
 	}
 }
