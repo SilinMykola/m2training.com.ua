@@ -52,7 +52,7 @@ class Router implements \Magento\Framework\App\RouterInterface
              * default magento 2 installation with sample data.
              */
             $request->setModuleName('cms')->setControllerName('page')->setActionName('view')->setParam('page_id', 5);
-        } else if(strpos($identifier, 'examplerouter') !== false) {
+        } else if(strpos($identifier, 'examplerouter123') !== false) {
             /*
              * We must set module, controller path and action name for our controller class(Controller/Test/Test.php)
              */
