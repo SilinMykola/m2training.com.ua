@@ -2,6 +2,7 @@
 return array (
   'modules' => 
   array (
+    'Inchoo_CustomControllers' => 1,
     'Inchoo_CustomRouter' => 1,
     'Magento_Store' => 1,
     'Magento_AdvancedPricingImportExport' => 1,

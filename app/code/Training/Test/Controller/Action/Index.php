@@ -10,14 +10,4 @@ class Index extends \Magento\Framework\App\Action\Action
     public function execute() {
         $this->getResponse()->appendBody("HELLO WORLD");
     }
-
-    /**
-     * Check if admin has permissions to visit related pages
-     *
-     * @return bool
-     */
-    protected function _isAllowed() {
-        $secret = $this->getRequest()->getParam('secret');
-        return isset($secret) && (int)$secret==1;
-    }
 }
