@@ -128,7 +128,7 @@ return array (
     'Magento_WidgetSampleData' => 1,
     'Magento_Wishlist' => 1,
     'Magento_WishlistSampleData' => 1,
-    'Shopial_Facebook' => 1,
+    'Shopial_Facebook' => 0,
     'Training_Test' => 1,
     'Training_Test2' => 1,
   ),

@@ -8,7 +8,7 @@ namespace Training\Test\Controller\Adminhtml\Index;
 class Index extends \Magento\Backend\App\Action
 {
     public function execute() {
-        die("zasada");
+
         $this->getResponse()->appendBody("HELLO WORLD");
     }
 
