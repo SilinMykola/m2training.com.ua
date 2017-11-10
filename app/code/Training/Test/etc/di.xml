@@ -28,7 +28,8 @@
         <plugin name="training_controller_product_view_plugin" type="Training\Test\Plugin\ControllerProductViewPlugin" sortOrder="10" disabled="true"/>
     </type>
 
-    <type name="Magento\Catalog\Block\Product\View\Description">
-        <plugin name="product_view_description_plugin" type="Training\Test\Block\Product\View\Description" sortOrder="10" />
-    </type>
+    <preference for="Magento\Catalog\Block\Product\View\Description" type="Training\Test\Block\Product\View\Description" />
+    <!--<type name="Magento\Catalog\Block\Product\View\Description">-->
+        <!--<plugin name="product_view_description_plugin" type="Training\Test\Block\Product\View\Description" sortOrder="10" />-->
+    <!--</type>-->
 </config>

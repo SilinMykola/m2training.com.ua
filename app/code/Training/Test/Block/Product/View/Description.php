@@ -1,11 +1,12 @@
 <?php
 namespace Training\Test\Block\Product\View;
 
-class Description
+class Description extends \Magento\Catalog\Block\Product\View\Description
 {
-    public function beforeToHtml(\Magento\Catalog\Block\Product\View\Description $originalBlock) {
+    public function _beforeToHtml() {
 
-        $originalBlock->setTemplate('Training_Test::description.phtml');
+        $this->setTemplate('Training_Test::description.phtml');
         //$originalBlock->getProduct()->setDescription('Test description');
+        return parent::_beforeToHtml();
     }
 }
